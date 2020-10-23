@@ -36,8 +36,7 @@ def monitor_cart():
     time.sleep(2)
     for element in cart:
         element.find
-        name = element.find_element_by_xpath('//*[@id="sc-item-C5e2064bc-3e9e-4a12-a50b-0880a2312025"]/div[4]/div/div[1]/div/div/div[2]/ul/li[1]/span/a/span[1]')
-        namr = element.find_element_by_xpath('//*[@class="a-row sc-list-item sc-list-item-border sc-java-remote-feature"]/div[4]/div/div[1]/div/div/div[2]/ul/li[1]/span/a/span[1]')
+        name = element.find_element_by_xpath('//*[@class="a-row sc-list-item sc-list-item-border sc-java-remote-feature"]/div[4]/div/div[1]/div/div/div[2]/ul/li[1]/span/a/span[1]')
         # print(name.text)
         time.sleep(1)
         break
@@ -45,11 +44,11 @@ def monitor_cart():
         # print("Name: " + name.text + "     Price: " + price.text)
 
 if __name__ == "__main__":
-    # usr = input("Enter Amazon account username: ")
-    # pswd = input("Enter Amazon account password: ")
-    # item = input("Enter item name to search or the URL of the item: ")
-    usr = 'yazan_alatrach@hotmail.com'
-    pswd = 'Kragmon0'
+    usr = input("Enter Amazon account username: ")
+    pswd = input("Enter Amazon account password: ")
+    item = input("Enter item name to search or the URL of the item: ")
+    # usr = ''
+    # pswd = ''
     item = 'https://www.amazon.com/PB2-Powdered-Chocolate-Peanut-Butter/dp/B07W7TZ551/ref=sr_1_8?dchild=1&keywords=pb2&qid=1603263453&sr=8-8'
     if item.find('.com'):
         url = item
